@@ -24,4 +24,5 @@ option 2: use pre-build app
 - deploy to tomcat webapp folder
 - open web browser at localhost:{port}/demoApp/
 
-
+result sample:
+![result](https://github.com/TerenceFung90/spring-boot-angular-demo/blob/master/Capture.JPG)

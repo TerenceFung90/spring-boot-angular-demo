@@ -1,0 +1,12 @@
+
+<div *ngIf="!data">No data found</div>
+
+<div class="p-2 d-inline-flex flex-row" *ngFor="let item of data; let i = index;">
+        <div class="">
+            <div class="align-self-start">
+                <a [href]="item.url" target="_blank" rel="noopener noreferrer">
+                    <img [alt]="item.thumbnail" [src]="item.thumbnail" [width]="item.thumbnailWidth" [height]="item.thumbnailHeight">
+                </a>
+            </div>
+        </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="container">
+  <form [formGroup]="inputForm" (ngSubmit)="onSubmit()">
+    
+      <div class="row">
+        <label>
+          autoCorrect(true/false):
+          <input class="input" type="text" formControlName="autoCorrect" />
+        </label>
+      </div>
+
+      <div class="row">
+        <label>
+          pageNumber:
+          <input type="number" formControlName="pageNumber" />
+        </label>
+      </div>
+
+      <div class="row">
+        <label>
+          pageSize:
+          <input type="number" formControlName="pageSize" />
+        </label>
+      </div>
+
+      <div class="row">
+        <label>
+          query:
+          <input type="text" formControlName="q" />
+        </label>
+      </div>
+      <div class="row">
+        <label>
+          safeSearch(true/false):
+          <input type="text" formControlName="safeSearch" />
+        </label>
+      </div>
+    
+
+    <button type="submit" [disabled]="!inputForm.valid">Submit</button>
+  </form>
+</div>
